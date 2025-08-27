@@ -1,34 +1,43 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+interface User {
+  id: string
+  name: string
+  email: string
+}
+
+interface UserProfileProps {
+  user: User
+  onEdit: () => void
+}
+
+const UserProfile = ({ user, onEdit }: UserProfileProps) => (
+  <div className="user-profile">
+    <h1>Welcome, {user.name}!</h1>
+    <p>Email: {user.email}</p>
+    <button onClick={onEdit} className="edit-button">
+      Edit Profile
+    </button>
+  </div>
+)
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [user] = useState<User>({
+    id: '123',
+    name: 'John Doe', 
+    email: 'john@example.com'
+  })
+
+  const handleEdit = () => {
+    alert('Edit profile clicked!')
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app">
+      <h1>Context Engineering in React Demo</h1>
+      <UserProfile user={user} onEdit={handleEdit} />
+    </div>
   )
 }
 
