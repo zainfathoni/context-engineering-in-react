@@ -20,8 +20,8 @@ Here are the talking points:
   - [/] 2.⁠ ⁠⁠Automated Debugging with AI
   - [/] 3.⁠ ⁠⁠Refactoring Legacy Components
   - [/] 4.⁠ ⁠⁠AI-Driven Component Decomposition
-- [ ] Prepare the demo app with a simple component rendered in the browser
-- [ ] Prepare the testing infrastructure demo app with
+- [x] Prepare the demo app with a simple component rendered in the browser
+- [x] Prepare the testing infrastructure demo app with
       [Vitest Browser Mode](https://vitest.dev/guide/browser/)
   - [ ] Prepare the AI prompts to write the tests reliably under `docs/test-plans`
     directory

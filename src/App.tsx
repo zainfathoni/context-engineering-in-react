@@ -12,7 +12,7 @@ interface UserProfileProps {
   onEdit: () => void
 }
 
-const UserProfile = ({ user, onEdit }: UserProfileProps) => (
+export const UserProfile = ({ user, onEdit }: UserProfileProps) => (
   <div className="user-profile">
     <h1>Welcome, {user.name}!</h1>
     <p>Email: {user.email}</p>
