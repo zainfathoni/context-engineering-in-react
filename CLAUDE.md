@@ -16,10 +16,10 @@ Here are the talking points:
 
 - [x] Initialize the talk slides using [Marp](https://marp.app/)
 - [ ] Write the slides based on the talking points
-  - [ ] 1.⁠ ⁠Prompting AI for Testable Components
-  - [ ] 2.⁠ ⁠⁠Automated Debugging with AI
-  - [ ] 3.⁠ ⁠⁠Refactoring Legacy Components
-  - [ ] 4.⁠ ⁠⁠AI-Driven Component Decomposition
+  - [/] 1.⁠ ⁠Prompting AI for Testable Components
+  - [/] 2.⁠ ⁠⁠Automated Debugging with AI
+  - [/] 3.⁠ ⁠⁠Refactoring Legacy Components
+  - [/] 4.⁠ ⁠⁠AI-Driven Component Decomposition
 - [ ] Prepare the demo app with a simple component rendered in the browser
 - [ ] Prepare the testing infrastructure demo app with
       [Vitest Browser Mode](https://vitest.dev/guide/browser/)
