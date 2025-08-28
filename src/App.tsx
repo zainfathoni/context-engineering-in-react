@@ -2,27 +2,13 @@ import { useState } from 'react'
 import './App.css'
 import LegacyUserDashboard from './components/LegacyUserDashboard.jsx'
 import { ComplexDataTable } from './components/ComplexDataTable'
+import { UserProfile } from './components/UserProfile'
 
 interface User {
   id: string
   name: string
   email: string
 }
-
-interface UserProfileProps {
-  user: User
-  onEdit: () => void
-}
-
-export const UserProfile = ({ user, onEdit }: UserProfileProps) => (
-  <div className="user-profile">
-    <h1>Welcome, {user.name}!</h1>
-    <p>Email: {user.email}</p>
-    <button onClick={onEdit} className="edit-button">
-      Edit Profile
-    </button>
-  </div>
-)
 
 // Mock data for ComplexDataTable
 const mockTableData = [

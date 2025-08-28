@@ -1,7 +1,7 @@
 import { render, screen, cleanup } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, it, expect, vi, afterEach } from 'vitest'
-import { UserProfile } from '../App'
+import { UserProfile } from './UserProfile'
 
 // Extend Vitest's expect with custom matchers
 expect.extend({
