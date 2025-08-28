@@ -50,3 +50,4 @@ Whenever writing documentation in Markdown, always remember to:
 
 - Always use case insensitive regex to assert text in testing, avoid hardcoded
   strings because they are case sensitive
+- Whenever I change any implementation details, please update the corresponding tests to reflect those changes.

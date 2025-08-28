@@ -13,7 +13,9 @@
       "mcp__playwright__browser_type",
       "mcp__playwright__browser_wait_for",
       "Bash(pnpm test:*)",
-      "Bash(pnpm build:*)"
+      "Bash(pnpm build:*)",
+      "mcp__playwright__browser_select_option",
+      "mcp__playwright__browser_press_key"
     ],
     "deny": [],
     "ask": []
