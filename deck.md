@@ -9,7 +9,9 @@ marp: true
 
 # Context Engineering in React
 
-A
+**Using AI to Transform React Development Workflows**
+
+*From Context Overflow to Context Engineering*
 
 ---
 
@@ -21,7 +23,7 @@ https://www.zainfathoni.com/about
 
 ---
 
-## AI Usage Principles
+## 🦾 AI Usage Principles
 
 ![bg right](assets/iron-man.png)
 
@@ -44,26 +46,26 @@ https://www.zainfathoni.com/about
 
 ---
 
-## Agenda
+## 📋 Agenda
 
-1. **Prompting AI for Testable Components**
-2. **Automated Debugging with AI**
-3. **⁠⁠Refactoring Legacy Components**
-4. **AI-Driven Component Decomposition**
-
----
-
-## 1. Prompting AI for Testable Components
-
-### The Challenge
-
-- Writing comprehensive tests takes time
-- Ensuring component accessibility
-- Covering edge cases and user interactions
+1. 🧪 **Prompting AI for Testable Components**
+2. 🔍 **Automated Debugging with AI**
+3. ♻️ **Refactoring Legacy Components**
+4. 🧩 **AI-Driven Component Decomposition**
 
 ---
 
-### The Solution: AI-Powered Test Generation
+## 1. 🧪 Prompting AI for Testable Components
+
+### ⚠️ The Challenge
+
+- ⏰ Writing comprehensive tests takes time
+- ♿ Ensuring component accessibility
+- 🎯 Covering edge cases and user interactions
+
+---
+
+### ✨ The Solution: AI-Powered Test Generation
 
 - 🛠️ **React Testing Library** - User-centric testing approach
 - 🌐 **Vitest Browser Mode** - Real browser environment
@@ -71,7 +73,7 @@ https://www.zainfathoni.com/about
 
 ---
 
-### Demo: From Component to Test
+### 🎬 Demo: From Component to Test
 
 ```tsx
 // UserProfile.tsx
@@ -85,7 +87,7 @@ const UserProfile = ({ user, onEdit }) => (
 
 ---
 
-### AI Prompt Pattern
+### 📝 AI Prompt Pattern
 
 > Generate comprehensive tests for this React component using React Testing Library. Include:
 >
@@ -96,17 +98,17 @@ const UserProfile = ({ user, onEdit }) => (
 
 ---
 
-## 2. Automated Debugging with AI
+## 2. 🔍 Automated Debugging with AI
 
-### The Problem
+### ⚠️ The Problem
 
-- Manual debugging is time-consuming
-- Hard to reproduce browser-specific bugs
-- Complex user flows are difficult to test manually
+- ⏰ Manual debugging is time-consuming
+- 🌐 Hard to reproduce browser-specific bugs
+- 🔄 Complex user flows are difficult to test manually
 
 ---
 
-### Enter AI-Powered Browser Automation
+### 🚀 Enter AI-Powered Browser Automation
 
 - :performing_arts: **Playwright MCP** - Automated browser interactions
 - 🔍 **Visual debugging** - Screenshot comparisons
@@ -114,7 +116,7 @@ const UserProfile = ({ user, onEdit }) => (
 
 ---
 
-### Demo: Debugging User Flow
+### 🎬 Demo: Debugging User Flow
 
 ```typescript
 // AI prompt: "Debug why login fails on Safari"
@@ -126,28 +128,28 @@ const UserProfile = ({ user, onEdit }) => (
 
 ---
 
-### AI Debugging Workflow
+### 🔄 AI Debugging Workflow
 
-1. **Describe the bug** to AI
-2. **Generate test script** automatically
-3. **Run across browsers** with Playwright
-4. **AI analyzes failures** and suggests fixes
-5. **Iterate until resolved**
-
----
-
-## 3. Refactoring Legacy Components
-
-### The Legacy Challenge
-
-- Old class components with complex lifecycle methods
-- Mixed concerns and tight coupling
-- Outdated patterns and dependencies
-- Fear of breaking existing functionality
+1. 📝 **Describe the bug** to AI
+2. 🤖 **Generate test script** automatically
+3. 🌐 **Run across browsers** with Playwright
+4. 🔍 **AI analyzes failures** and suggests fixes
+5. 🔄 **Iterate until resolved**
 
 ---
 
-### AI-Assisted Refactoring Strategy
+## 3. ♻️ Refactoring Legacy Components
+
+### ⚠️ The Legacy Challenge
+
+- 📜 Old class components with complex lifecycle methods
+- 🔗 Mixed concerns and tight coupling
+- 📦 Outdated patterns and dependencies
+- 😰 Fear of breaking existing functionality
+
+---
+
+### 🎯 AI-Assisted Refactoring Strategy
 
 - :robot: **Code transformation** - Class to functional components
 - 🔄 **Pattern migration** - HOCs to custom hooks
@@ -156,7 +158,7 @@ const UserProfile = ({ user, onEdit }) => (
 
 ---
 
-### Demo: Class to Hooks Migration
+### 🎬 Demo: Class to Hooks Migration
 
 ```jsx
 // Before: Class Component (50+ lines)
@@ -176,28 +178,28 @@ const UserDashboard = ({ userId }) => {
 
 ---
 
-### AI Refactoring Workflow
+### 🔄 AI Refactoring Workflow
 
-1. **Analyze legacy code** structure and dependencies
-2. **Generate migration plan** with step-by-step approach
-3. **Transform code** while preserving functionality
-4. **Generate tests** to ensure no regressions
-5. **Update documentation** and type definitions
-
----
-
-## 4. AI-Driven Component Decomposition
-
-### The Monolithic Component Problem
-
-- Components doing too many things
-- Hard to test individual features
-- Difficult to reuse parts
-- Complex state management
+1. 🔍 **Analyze legacy code** structure and dependencies
+2. 📋 **Generate migration plan** with step-by-step approach
+3. ♻️ **Transform code** while preserving functionality
+4. 🧪 **Generate tests** to ensure no regressions
+5. 📚 **Update documentation** and type definitions
 
 ---
 
-### AI-Powered Decomposition Strategy
+## 4. 🧩 AI-Driven Component Decomposition
+
+### ⚠️ The Monolithic Component Problem
+
+- 🏗️ Components doing too many things
+- 🧪 Hard to test individual features
+- 🔄 Difficult to reuse parts
+- 🎛️ Complex state management
+
+---
+
+### 🎯 AI-Powered Decomposition Strategy
 
 - :brain: **Responsibility analysis** - Identify single concerns
 - 🔍 **Pattern recognition** - Find reusable components
@@ -206,7 +208,7 @@ const UserDashboard = ({ userId }) => {
 
 ---
 
-### Demo: Breaking Down a Monster Component
+### 🎬 Demo: Breaking Down a Monster Component
 
 ```jsx
 // Before: 200+ line ProductPage component
@@ -228,7 +230,7 @@ const ProductPage = () => (
 
 ---
 
-### Functional Currying with Custom Hooks
+### 🪝 Functional Currying with Custom Hooks
 
 ```jsx
 // Curried function for creating custom hooks
@@ -249,22 +251,27 @@ const ProductPage = () => {
 
 ---
 
-### AI Decomposition Process
+### 🔄 AI Decomposition Process
 
-1. **Analyze component complexity** and responsibilities
-2. **Identify separation boundaries** using AI insights
-3. **Generate component hierarchy** with clear interfaces
-4. **Create focused components** with single purposes
-5. **Optimize composition** for reusability and testing
-
----
-
-## Key Takeaways
-
-- ...
+1. 🔍 **Analyze component complexity** and responsibilities
+2. 🎯 **Identify separation boundaries** using AI insights
+3. 🏗️ **Generate component hierarchy** with clear interfaces
+4. 🎯 **Create focused components** with single purposes
+5. ⚡ **Optimize composition** for reusability and testing
 
 ---
 
-## Thank You
+## 🎯 Key Takeaways
+
+- 🤖 **AI as Enhancement Tool**: Augment your workflow, don't replace expertise
+- 🧪 **Systematic Testing**: AI-generated comprehensive test suites
+- 🔍 **Smart Debugging**: Browser automation + visual debugging
+- ♻️ **Strategic Refactoring**: Transform legacy code systematically
+- 🧩 **Intelligent Decomposition**: Break down complex components with AI
+- ⚙️ **Context Engineering**: Structured, repeatable AI practices
+
+---
+
+## 🙏 Thank You
 
 https://zainf.dev/context-engineering-in-react
