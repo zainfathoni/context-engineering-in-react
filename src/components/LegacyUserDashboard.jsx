@@ -35,21 +35,45 @@ class LegacyUserDashboard extends Component {
     try {
       this.setState({ loading: true, error: null })
       
-      const [userResponse, postsResponse] = await Promise.all([
-        fetch(`/api/users/${this.props.userId}`),
-        fetch(`/api/users/${this.props.userId}/posts`)
-      ])
+      // Simulate API delay for realistic demo experience
+      await new Promise(resolve => setTimeout(resolve, 800))
       
-      if (!userResponse.ok || !postsResponse.ok) {
-        throw new Error('Failed to fetch data')
+      // Mock data - simulates legacy API responses
+      const mockUser = {
+        id: this.props.userId,
+        name: 'Zain Fathoni',
+        email: 'me@zainf.dev',
+        avatar: '/zain-avatar.jpeg',
+        joinDate: '2024-03-15T00:00:00Z'
       }
       
-      const user = await userResponse.json()
-      const posts = await postsResponse.json()
+      const mockPosts = [
+        {
+          id: 1,
+          title: 'Getting Started with React Components',
+          excerpt: 'Learn the fundamentals of building reusable React components with proper state management...',
+          content: '<p>This is a comprehensive guide to React components. We\'ll cover everything from basic functional components to complex class-based patterns.</p><p>Key topics include state management, lifecycle methods, and best practices for component architecture.</p>',
+          createdAt: '2024-08-25T10:30:00Z'
+        },
+        {
+          id: 2,
+          title: 'Advanced State Management Patterns',
+          excerpt: 'Exploring complex state patterns in legacy React applications and modern alternatives...',
+          content: '<p>State management in React has evolved significantly. This post explores both legacy patterns and modern approaches.</p><p>We\'ll examine class-based state, context API usage, and integration with external state management libraries.</p>',
+          createdAt: '2024-08-24T14:15:00Z'
+        },
+        {
+          id: 3,
+          title: 'Refactoring Legacy Components',
+          excerpt: 'Step-by-step approach to modernizing old React codebases while maintaining functionality...',
+          content: '<p>Legacy React components often use outdated patterns that can be challenging to maintain.</p><p>This guide provides practical strategies for refactoring class components, updating lifecycle methods, and improving overall code quality.</p>',
+          createdAt: '2024-08-23T09:45:00Z'
+        }
+      ]
       
       this.setState({
-        user,
-        posts,
+        user: mockUser,
+        posts: mockPosts,
         loading: false
       })
     } catch (error) {
