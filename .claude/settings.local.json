@@ -11,7 +11,8 @@
       "mcp__playwright__browser_snapshot",
       "mcp__playwright__browser_close",
       "mcp__playwright__browser_type",
-      "mcp__playwright__browser_wait_for"
+      "mcp__playwright__browser_wait_for",
+      "Bash(pnpm test:*)"
     ],
     "deny": [],
     "ask": []
